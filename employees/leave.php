@@ -80,7 +80,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="leave.php"><img src="../assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="leave.php"><img src="../assets/images/icon/eleave-logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -175,12 +175,12 @@
 
                                         <div class="form-group">
                                             <label for="example-date-input" class="col-form-label">Starting Date</label>
-                                            <input class="form-control" type="date" value="2020-03-05" data-inputmask="'alias': 'date'" required id="example-date-input" name="fromdate">
+                                            <input class="form-control" type="date" value="" data-inputmask="'alias': 'date'" required id="example-date-input" name="fromdate">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="example-date-input" class="col-form-label">End Date</label>
-                                            <input class="form-control" type="date" value="2020-03-05" data-inputmask="'alias': 'date'" required id="example-date-input" name="todate">
+                                            <input class="form-control" type="date" value="" data-inputmask="'alias': 'date'" required id="example-date-input" name="todate">
                                         </div>
 
                                         <div class="form-group">

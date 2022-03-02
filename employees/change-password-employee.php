@@ -69,7 +69,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="leave.php"><img src="../assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="leave.php"><img src="../assets/images/icon/eleave-logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -151,7 +151,7 @@
                             
                              </div><?php } 
                                  else if($msg){?><div class="alert alert-success alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($msg); ?> 
-                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                 <button type="button"  class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                  </div><?php }?>

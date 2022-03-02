@@ -1783,9 +1783,17 @@ table.dbkit-table tr td {
 }
 
 .alert-dismiss .alert-dismissible .close {
-  top: 4px;
+  top: -4px !important;
   outline: none;
   font-size: 13px;
+}
+
+.alert-dismissible .close {
+  position: absolute;
+  top: -4px !important;
+  right: 0;
+  padding: 0.75rem 1.25rem;
+  color: inherit;
 }
 
 /*-------------------- END Alert------------------- */

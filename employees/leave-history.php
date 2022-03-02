@@ -53,7 +53,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="leave.php"><img src="../assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="leave.php"><img src="../assets/images/icon/eleave-logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -126,7 +126,7 @@
                             <div class="card-body">
                                 <h4 class="header-title">Leave History Table</h4>
                                 <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <button type="button"  class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             

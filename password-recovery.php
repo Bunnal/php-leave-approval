@@ -58,7 +58,7 @@
     <div class="login-area login-s2">
         <div class="container">
         <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <button type="button"  class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                             
