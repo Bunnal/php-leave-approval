@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
 </head>
 
 <body>
@@ -241,6 +243,8 @@
     <!-- others plugins -->
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/scripts.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../assets/js/adminlte.min.js"></script>
 </body>
 
 </html>

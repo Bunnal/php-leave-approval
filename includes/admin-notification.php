@@ -12,9 +12,9 @@
 
 ?>
     
-    <li class="dropdown">
-        <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
-            <span><?php echo htmlentities($unreadcount);?></span>
+    <li class="dropdown nav-item ">
+        <i class="ti-bell nav-link" data-toggle="dropdown" style="cursor:pointer ; font-weight: 600; position: absolute; right: -6px; top: 1px;">
+            <span class="badge badge-warning navbar-badge"><?php echo htmlentities($unreadcount);?></span>
             </i>
             <div class="dropdown-menu bell-notify-box notify-box">
             <span class="notify-title">You have <?php echo htmlentities($unreadcount);?> <b>unread</b> notifications!</span>
