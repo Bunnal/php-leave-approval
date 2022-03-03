@@ -36,10 +36,12 @@
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- Start datatable css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+    <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../assets/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../assets/css/buttons.bootstrap4.min.css">
+     <!-- Theme style -->
+     <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+
     <!-- others css -->
     <link rel="stylesheet" href="../assets/css/typography.css">
     <link rel="stylesheet" href="../assets/css/default-css.css">
@@ -47,8 +49,6 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <!-- Theme style -->
-    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
 </head>
 
 <body>
@@ -57,156 +57,162 @@
         <div class="loader"></div>
     </div>
     <!-- preloader area end -->
-    
-    <div class="page-container">
-        <!-- sidebar menu area start -->
-        <div class="sidebar-menu">
-            <div class="sidebar-header">
-                <div class="logo">
-                    <a href="dashboard.php"><img src="../assets/images/icon/eleave-logo.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="main-menu">
-                <div class="menu-inner">
-                    <?php
-                        $page='department';
-                        include '../includes/admin-sidebar.php';
-                    ?>
-                </div>
-            </div>
-        </div>
-        <!-- sidebar menu area end -->
-        <!-- main content area start -->
-        <div class="main-content">
-            <!-- header area start -->
-            <div class="header-area">
-                <div class="row align-items-center">
-                    <!-- nav and search button -->
-                    <div class="col-md-6 col-sm-8 clearfix">
-                        <div class="nav-btn pull-left">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        
-                    </div>
-                    <!-- profile info & task notification -->
-                    <div class="col-md-6 col-sm-4 clearfix">
-                        <ul class="notification-area pull-right">
-                            <li id="full-view"><i class="ti-fullscreen"></i></li>
-                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
 
-                            <!-- Notification bell -->
-                            <?php include '../includes/admin-notification.php'?>
+    <div class="wrapper">
 
-                        </ul>
-                    </div>
-                </div>
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fa fa-bars"></i></a>
+            </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+            <!-- Notifications Dropdown Menu -->
+            <!-- Notification bell -->
+            <?php include '../includes/admin-notification.php'?>
+
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="ti-fullscreen"></i>
+                </a>
+            </li>
+            
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+            <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <span class="brand-text font-weight-light">Eleave</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <?php $page='department'; include '../includes/admin-sidebar.php'; ?>
             </div>
-            <!-- header area end -->
-            <!-- page title area start -->
-            <div class="page-title-area">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="breadcrumbs-area clearfix">
-                            <h4 class="page-title pull-left">Department Section</h4>
-                            <ul class="breadcrumbs pull-left">
-                                <li><a href="dashboard.php">Home</a></li>
-                                <li><span>Department Management</span></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6 clearfix">
-                        <div class="user-profile pull-right">
-                            <img class="avatar user-thumb" src="../assets/images/admin.png" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">ADMIN <i class="fa fa-angle-down"></i></h4>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="logout.php">Log Out</a>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Main Sidebar Container end-->
+
+        <div class="content-wrapper">
+            <div class="page-container pl-0">
+              
+                <!-- main content area start -->
+                <div class="main-content">
+                    <!-- page title area start -->
+                    <div class="page-title-area">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <div class="breadcrumbs-area clearfix">
+                                    <h4 class="page-title pull-left">Department Section</h4>
+                                    <ul class="breadcrumbs pull-left">
+                                        <li><a href="dashboard.php">Home</a></li>
+                                        <li><span>Department Management</span></li>
+                                        
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- page title area end -->
-            <div class="main-content-inner">
-                
-                
-                <!-- row area start -->
-                <div class="row">
-                    <!-- Dark table start -->
-                    <div class="col-12 mt-5">
-                    
-                        <div class="card">
-                        
-
-                        <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
                             
-                             </div><?php } 
-                                 else if($msg){?><div class="alert alert-success alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($msg); ?> 
-                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                 </div><?php }?>
-
-                            <div class="card-body">
-                                <div class="data-tables datatable-dark">
-                                <center><a href="add-department.php" class="btn btn-sm btn-info">Add New Department</a></center>
-                                    <table id="dataTable3" class="table table-hover table-striped text-center">
-                                        <thead class="text-capitalize">
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Department</th>
-                                                <th>Shortform</th>
-                                                <th>Code</th>
-                                                <th>Created Date</th>
-                                                
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                    <?php $sql = "SELECT * from tbldepartments";
-                                    $query = $dbh -> prepare($sql);
-                                    $query->execute();
-                                    $results=$query->fetchAll(PDO::FETCH_OBJ);
-                                    $cnt=1;
-                                    if($query->rowCount() > 0)
-                                    {
-                                    foreach($results as $result)
-                                    {               ?>  
-                                        <tr>
-                                            <td> <?php echo htmlentities($cnt);?></td>
-                                            <td><?php echo htmlentities($result->DepartmentName);?></td>
-                                            <td><?php echo htmlentities($result->DepartmentShortName);?></td>
-                                            <td><?php echo htmlentities($result->DepartmentCode);?></td>
-                                            <td><?php echo htmlentities($result->CreationDate);?></td>
-                                            <td><a href="edit-department.php?deptid=<?php echo htmlentities($result->id);?>"><i class="fa fa-edit" style="color:green"></i></a><a href="department.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you want to delete');"> <i class="fa fa-trash" style="color:red"></i></a></td>
-                                        </tr>
-                                         <?php $cnt++;} }?>
-                                    </tbody>
-                                    </table>
+                            <div class="col-sm-6 clearfix">
+                                <div class="user-profile pull-right">
+                                    <img class="avatar user-thumb" src="../assets/images/admin.png" alt="avatar">
+                                    <h4 class="user-name dropdown-toggle" data-toggle="dropdown">ADMIN <i class="fa fa-angle-down"></i></h4>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="logout.php">Log Out</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Dark table end -->
-                    
-                </div>
-                <!-- row area end -->
-                
-                </div>
-                <!-- row area start-->
-            </div>
-            <?php include '../includes/footer.php' ?>
-        <!-- footer area end-->
-        </div>
-        <!-- main content area end -->
+                    <!-- page title area end -->
+                    <div class="main-content-inner">
+                        
+                        
+                        <!-- row area start -->
+                        <div class="row">
+                            <!-- Dark table start -->
+                            <div class="col-12 mt-5">
+                            
+                                <div class="card">
+                                
 
-        
+                                    <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    
+                                    </div><?php } 
+                                        else if($msg){?><div class="alert alert-success alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($msg); ?> 
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div><?php }?>
+
+                                    <div class="card-body">
+                                        <div class="data-tables">
+                                        <center><a href="add-department.php" class="btn btn-sm btn-info">Add New Department</a></center>
+                                            <table  id="example2" class="table table-bordered table-hover text-center">
+                                                <thead >
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Department</th>
+                                                        <th>Shortform</th>
+                                                        <th>Code</th>
+                                                        <th>Created Date</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                            <?php $sql = "SELECT * from tbldepartments";
+                                            $query = $dbh -> prepare($sql);
+                                            $query->execute();
+                                            $results=$query->fetchAll(PDO::FETCH_OBJ);
+                                            $cnt=1;
+                                            if($query->rowCount() > 0)
+                                            {
+                                            foreach($results as $result)
+                                            {               ?>  
+                                                <tr>
+                                                    <td> <?php echo htmlentities($cnt);?></td>
+                                                    <td><?php echo htmlentities($result->DepartmentName);?></td>
+                                                    <td><?php echo htmlentities($result->DepartmentShortName);?></td>
+                                                    <td><?php echo htmlentities($result->DepartmentCode);?></td>
+                                                    <td><?php echo htmlentities($result->CreationDate);?></td>
+                                                    <td><a href="edit-department.php?deptid=<?php echo htmlentities($result->id);?>"><i class="fa fa-edit" style="color:green"></i></a><a href="department.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you want to delete');"> <i class="fa fa-trash" style="color:red"></i></a></td>
+                                                </tr>
+                                                <?php $cnt++;} }?>
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Dark table end -->
+                            
+                        </div>
+                        <!-- row area end -->
+                        
+                        </div>
+                        <!-- row area start-->
+                    </div>
+                    <?php include '../includes/footer.php' ?>
+                <!-- footer area end-->
+                </div>
+                <!-- main content area end -->
+
+                
+            </div>
+        </div>
+
     </div>
     <!-- jquery latest version -->
     <script src="../assets/js/vendor/jquery-2.2.4.min.js"></script>
@@ -224,21 +230,42 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <!-- start zingchart js -->
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-    <script>
-    zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
-    </script>
     <!-- all line chart activation -->
     <script src="assets/js/line-chart.js"></script>
     <!-- all pie chart -->
     <script src="assets/js/pie-chart.js"></script>
 
-        <!-- Start datatable js -->
-        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
-    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/js/dataTables.responsive.min.js"></script>
+    <script src="../assets/js/responsive.bootstrap4.min.js"></script>
+    <script src="../assets/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/js/buttons.bootstrap4.min.js"></script>
+    <script src="../assets/js/jszip.min.js"></script>
+    <script src="../assets/js/pdfmake.min.js"></script>
+    <script src="../assets/js/vfs_fonts.js"></script>
+    <script src="../assets/js/buttons.html5.min.js"></script>
+    <script src="../assets/js/buttons.print.min.js"></script>
+    <script src="../assets/js/buttons.colVis.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching":true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+            });
+        });
+    </script> 
     
     <!-- others plugins -->
     <script src="../assets/js/plugins.js"></script>

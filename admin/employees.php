@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="../assets/css/slicknav.min.css">
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-
+    <!-- data table  -->
     <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../assets/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="../assets/css/buttons.bootstrap4.min.css">
