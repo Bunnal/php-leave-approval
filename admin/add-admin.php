@@ -198,7 +198,7 @@
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                </div><?php }?>
+                             </div><?php }?>
                                 <div class="card">
                                     <form name="addemp" method="POST">
                                         <div class="card-body">

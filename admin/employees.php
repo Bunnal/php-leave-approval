@@ -150,7 +150,6 @@
                         <div class="row">
                             <!-- Dark table start -->
                             <div class="col-12 mt-5">
-                            <div class="card">
                                 <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -161,8 +160,8 @@
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        </div><?php }?>
-                                <!-- /.card-header -->
+                                 </div><?php }?>
+                            <div class="card">
                                 <div class="card-body">
                                     <center><a href="add-employee.php" class="btn btn-sm btn-info">Add New Employee</a></center>
                                     <table id="example2" class="table table-bordered table-hover text-center">

@@ -139,11 +139,7 @@
                         <div class="row">
                             <!-- Dark table start -->
                             <div class="col-12 mt-5">
-                            
-                                <div class="card">
-                                
-
-                                    <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+                                <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -153,8 +149,8 @@
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        </div><?php }?>
-
+                                </div><?php }?>
+                                <div class="card">
                                     <div class="card-body">
                                         <div class="data-tables">
                                         <center><a href="add-department.php" class="btn btn-sm btn-info">Add New Department</a></center>

@@ -141,8 +141,7 @@
                             <!-- row area start -->
                             <div class="row">
                                 <div class="col-12 mt-5">
-                                    <div class="card">
-                                        <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+                                    <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -152,48 +151,46 @@
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
-                                                </div><?php }?>
-                                                
-                                                <form method="POST">
-                                                <div class="card-body">
-                                                        
-                                                        <p class="text-muted font-14 mb-4">Please make changes on the form below in order to update department</p>
+                                    </div><?php }?>
+                                    <div class="card">   
+                                        <form method="POST">
+                                            <div class="card-body">        
+                                                <p class="text-muted font-14 mb-4">Please make changes on the form below in order to update department</p>
 
-                                                        <?php 
-                                                            $did=intval($_GET['deptid']);
-                                                            $sql = "SELECT * from tbldepartments WHERE id=:did";
-                                                            $query = $dbh -> prepare($sql);
-                                                            $query->bindParam(':did',$did,PDO::PARAM_STR);
-                                                            $query->execute();
-                                                            $results=$query->fetchAll(PDO::FETCH_OBJ);
-                                                            $cnt=1;
-                                                            if($query->rowCount() > 0)
-                                                            {
-                                                            foreach($results as $result)
-                                                            {               ?> 
-                                                    
+                                                <?php 
+                                                    $did=intval($_GET['deptid']);
+                                                    $sql = "SELECT * from tbldepartments WHERE id=:did";
+                                                    $query = $dbh -> prepare($sql);
+                                                    $query->bindParam(':did',$did,PDO::PARAM_STR);
+                                                    $query->execute();
+                                                    $results=$query->fetchAll(PDO::FETCH_OBJ);
+                                                    $cnt=1;
+                                                    if($query->rowCount() > 0)
+                                                    {
+                                                    foreach($results as $result)
+                                                    {               ?> 
+                                            
 
-                                                        <div class="form-group">
-                                                            <label for="example-text-input" class="col-form-label">Department Name</label>
-                                                            <input class="form-control" name="departmentname" type="text" required id="example-text-input" value="<?php echo htmlentities($result->DepartmentName);?>">
-                                                        </div>
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="col-form-label">Department Name</label>
+                                                    <input class="form-control" name="departmentname" type="text" required id="example-text-input" value="<?php echo htmlentities($result->DepartmentName);?>">
+                                                </div>
 
-                                                        <div class="form-group">
-                                                            <label for="example-text-input" class="col-form-label">Shortform</label>
-                                                            <input class="form-control" name="departmentshortname" type="text" autocomplete="off" required id="example-text-input" value="<?php echo htmlentities($result->DepartmentShortName);?>">
-                                                        </div>
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="col-form-label">Shortform</label>
+                                                    <input class="form-control" name="departmentshortname" type="text" autocomplete="off" required id="example-text-input" value="<?php echo htmlentities($result->DepartmentShortName);?>">
+                                                </div>
 
-                                                        <div class="form-group">
-                                                            <label for="example-email-input" class="col-form-label">Code</label>
-                                                            <input class="form-control" name="deptcode" type="text" autocomplete="off" required id="example-email-input" value="<?php echo htmlentities($result->DepartmentCode);?>">
-                                                        </div>
+                                                <div class="form-group">
+                                                    <label for="example-email-input" class="col-form-label">Code</label>
+                                                    <input class="form-control" name="deptcode" type="text" autocomplete="off" required id="example-email-input" value="<?php echo htmlentities($result->DepartmentCode);?>">
+                                                </div>
 
-                                                        <?php }
-                                                        }?>
+                                                <?php }
+                                                }?>
 
-                                                        <button class="btn btn-primary" name="update" id="update" type="submit">MAKE CHANGES</button>
-                                                        
-                                                    </div>
+                                                <button class="btn btn-primary" name="update" id="update" type="submit">MAKE CHANGES</button> 
+                                            </div>
                                         </form>
                                     </div>
                                 </div>

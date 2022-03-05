@@ -129,10 +129,7 @@
                         <div class="row">
                             <!-- data table start -->
                             <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Leave History Table</h4>
-                                        <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+                                <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                         <button type="button"  class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -142,7 +139,11 @@
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        </div><?php }?>
+                                </div><?php }?>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Leave History Table</h4>
                                         <div class="data-tables">
                                             <table id="dataTable" class="table table-hover progress-table text-center">
                                                 <thead class="bg-light text-capitalize">

@@ -149,7 +149,7 @@
                             
                             <!-- Striped table start -->
                             <div class="col-lg-12 mt-5">
-                            <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+                                <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -159,7 +159,7 @@
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        </div><?php }?>
+                                </div><?php }?>
                                 <div class="card">
                                     <div class="card-body">
                                         

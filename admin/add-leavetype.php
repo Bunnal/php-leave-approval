@@ -140,10 +140,6 @@
                         <div class="row">
                             <!-- Dark table start -->
                             <div class="col-12 mt-5">
-                            
-                                <div class="card">
-                                
-
                                 <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -155,27 +151,27 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         </div><?php }?>
-
-                                        <form method="POST">
+                                <div class="card">
+                                    <form method="POST">
                                         <div class="card-body">
                                                 
-                                                <p class="text-muted font-14 mb-4">Please fill up the form in order to add new leave type</p>
+                                            <p class="text-muted font-14 mb-4">Please fill up the form in order to add new leave type</p>
 
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Leave Type</label>
-                                                    <input class="form-control" name="leavetype" type="text" required id="example-text-input" required>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Short Description</label>
-                                                    <input class="form-control" name="description" type="text" autocomplete="off" required id="example-text-input" required>
-                                                        
-                                                </div>
-
-                                                <button class="btn btn-primary" name="add" id="add" type="submit">ADD</button>
-                                                
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Leave Type</label>
+                                                <input class="form-control" name="leavetype" type="text" required id="example-text-input" required>
                                             </div>
-                                            </form>
+
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Short Description</label>
+                                                <input class="form-control" name="description" type="text" autocomplete="off" required id="example-text-input" required>
+                                                    
+                                            </div>
+
+                                            <button class="btn btn-primary" name="add" id="add" type="submit">ADD</button>
+                                                
+                                        </div>
+                                     </form>
                                 </div>
                             </div>
                             <!-- Dark table end -->
