@@ -111,7 +111,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column metismenu" id="menu">
 
-                        <li class="active">
+                        <li class="#">
                             <a href="leave.php" aria-expanded="true"><i class="ti-user"></i><span>Apply Leave
                                 </span></a>
                         </li>

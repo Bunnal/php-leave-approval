@@ -8,26 +8,27 @@
     
     if(isset($_POST['change']))
         {
-    $password=md5($_POST['password']);
-    $newpassword=md5($_POST['newpassword']);
-    $username=$_SESSION['emplogin'];
-        $sql ="SELECT Password FROM tblemployees WHERE EmailId=:username and Password=:password";
-    $query= $dbh -> prepare($sql);
-    $query-> bindParam(':username', $username, PDO::PARAM_STR);
-    $query-> bindParam(':password', $password, PDO::PARAM_STR);
-    $query-> execute();
-    $results = $query -> fetchAll(PDO::FETCH_OBJ);
-    if($query -> rowCount() > 0){
+            $password=md5($_POST['password']);
+            $newpassword=md5($_POST['newpassword']);
+            $username=$_SESSION['emplogin'];
+                $sql ="SELECT Password FROM tblemployees WHERE EmailId=:username and Password=:password";
+            $query= $dbh -> prepare($sql);
+            $query-> bindParam(':username', $username, PDO::PARAM_STR);
+            $query-> bindParam(':password', $password, PDO::PARAM_STR);
+            $query-> execute();
+            $results = $query -> fetchAll(PDO::FETCH_OBJ);
+            if($query -> rowCount() > 0){
 
-    $con="UPDATE tblemployees set Password=:newpassword where EmailId=:username";
-    $chngpwd1 = $dbh->prepare($con);
-    $chngpwd1-> bindParam(':username', $username, PDO::PARAM_STR);
-    $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
-    $chngpwd1->execute();
-    $msg="Your Password Has Been Updated.";
-    } else {
-        $error="Sorry your current password is wrong!";    
-    }
+            $con="UPDATE tblemployees set Password=:newpassword where EmailId=:username";
+            $chngpwd1 = $dbh->prepare($con);
+            $chngpwd1-> bindParam(':username', $username, PDO::PARAM_STR);
+            $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
+            $chngpwd1->execute();
+           
+            $msg="Your Password Has Been Updated.";
+            } else {
+                $error="Sorry your current password is wrong!";    
+            }
 }
 ?>
 
@@ -57,6 +58,18 @@
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- Theme style -->
     <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+
+     <!-- Custom form script -->
+     <script type="text/javascript">
+        function valid(){
+            if($("#newpassword").val() != $("#confpassword").val()) {
+            alert("New Password and Confirm Password Field do not match  !!");
+            $("#confpassword").focus();
+            return false;
+                } return true;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -163,7 +176,7 @@
                                         </button>
                                         </div><?php }?>
                                         <div class="card">
-                                        <form name="chngpwd" method="POST">
+                                        <form name="chngpwd" method="POST" autocomplete="off">
 
                                             <div class="card-body">
                                                 <h4 class="header-title">Change Password</h4>
@@ -171,17 +184,17 @@
 
                                                 <div class="form-group">
                                                     <label for="example-date-input" class="col-form-label">Existing Password</label>
-                                                    <input class="form-control" id="password" type="password" autocomplete="off" name="password"  required>
+                                                    <input class="form-control" id="password" type="password" autocomplete="new-password" name="password"  required>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="example-date-input" class="col-form-label">New Password</label>
-                                                    <input class="form-control" type="password" name="newpassword" id="password" autocomplete="off" required>
+                                                    <input class="form-control" type="password" name="newpassword" id="newpassword" autocomplete="off" required>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="example-date-input" class="col-form-label">Confirm Password</label>
-                                                    <input class="form-control" type="password" name="confirmpassword" id="password" autocomplete="off" required>
+                                                    <input class="form-control" type="password" name="confirmpassword" id="confpassword" autocomplete="off" required>
                                                 </div>
 
 

@@ -70,7 +70,7 @@
     <div class="login-area login-s2">
         <div class="container">
             <div class="login-box ptb--100">
-                <form method="POST" name="signin">
+                <form method="POST" name="signin" autocomplete="off">
                     <div class="login-form-head">
                         <h4>Employee Login Panel</h4>
                         <p>Employee Leave Management System</p>
@@ -79,13 +79,13 @@
                     <div class="login-form-body">
                         <div class="form-gp">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" id="username" name="username" autocomplete="off" required>
+                            <input type="email" id="username" name="username" autocomplete="new-email" required>
                             <i class="ti-email"></i>
                             <div class="text-danger"></div>
                         </div>
                         <div class="form-gp">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" id="password" name="password" autocomplete="off" required>
+                            <input type="password" id="password" name="password" autocomplete="new-password" required>
                             <i class="ti-lock"></i>
                             <div class="text-danger"></div>
                         </div>

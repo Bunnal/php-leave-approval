@@ -68,13 +68,13 @@
                     <div class="login-form-body">
                         <div class="form-gp">
                             <label for="exampleInputEmail1">Username</label>
-                            <input type="text" id="exampleInputEmail1" name="username" autocomplete="off" required>
+                            <input type="text" id="exampleInputEmail1" name="username" autocomplete="new-text" required>
                             <i class="ti-user"></i>
                             <div class="text-danger"></div>
                         </div>
                         <div class="form-gp">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" id="exampleInputPassword1" name="password" autocomplete="off" required>
+                            <input type="password" id="exampleInputPassword1" name="password" autocomplete="new-password" required>
                             <i class="ti-lock"></i>
                             <div class="text-danger"></div>
                         </div>
