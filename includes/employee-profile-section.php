@@ -1,4 +1,4 @@
-<div class="user-profile pull-right">
+<div class="user-profile pull-right pt-1 pb-1">
          <img class="avatar user-thumb" src="../assets/images/avatar.jpg" alt="avatar">
         <h4 class="user-name dropdown-toggle" data-toggle="dropdown"><?php include 'logged.php' ?> <i class="fa fa-angle-down"></i></h4>
          <div class="dropdown-menu">
