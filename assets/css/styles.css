@@ -1796,6 +1796,9 @@ table.dbkit-table tr td {
   color: inherit;
 }
 
+.brand-text{
+  margin-left: -20px !important;
+}
 /*-------------------- END Alert------------------- */
 
 /*-------------------- 10. Badge------------------- */

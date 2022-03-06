@@ -107,8 +107,8 @@
          <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="leave.php" class="brand-link">
-                <img src="../assets/images/icon/leave-logo-one.png" alt="" class="brand-image img-circle">
-                <span class="brand-text font-weight-light">Eleave</span>
+                <img src="../assets/images/icon/eleave-logo2.png" alt="" class="brand-image img-circle">
+                <span class="brand-text font-weight-light" style="margin-left: -20px;">Eleave</span>
             </a>
 
             <!-- Sidebar -->
