@@ -91,7 +91,7 @@
             <ul class="navbar-nav ml-auto">
             <!-- Notifications Dropdown Menu -->
             <!-- Notification bell -->
-            <?php include '../includes/admin-notification.php'?>
+            <?php // include '../includes/admin-notification.php'?>
 
             <li class="nav-item">
                 <a class="nav-link" data-widget="fullscreen" href="#" role="button">
