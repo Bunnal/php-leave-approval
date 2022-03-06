@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2022 at 10:33 AM
+-- Generation Time: Mar 06, 2022 at 11:08 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.23
 
@@ -102,11 +102,11 @@ CREATE TABLE `tblemployees` (
 INSERT INTO `tblemployees` (`id`, `EmpId`, `FirstName`, `LastName`, `EmailId`, `Password`, `Gender`, `Dob`, `Department`, `Address`, `City`, `Country`, `Phonenumber`, `Status`, `RegDate`) VALUES
 (11, '001', 'Leang', 'Bunal', 'bunal@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '1999-03-12', 'Research', '#227 st 138 khan Toul Kok', 'Phnom Penh', 'Cambodia', '09749853', 1, '2022-03-05 16:24:10'),
 (12, '002', 'Latt', 'Chanon', 'chanon@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '2000-03-05', 'Information Technology', 'No 134 Street 754 Khan Tol Songkea', 'Phnom Penh', 'Cambodia', '07878333', 1, '2022-03-05 16:27:20'),
-(13, '003', 'Sokung', ' Ney', 'sokung@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '2022-03-04', 'Operations', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '09684848', 1, '2022-03-06 08:47:44'),
-(14, '004', 'Nary', 'Moul', 'nary@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-02', 'Information Technology', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '0868674', 1, '2022-03-06 08:49:20'),
-(15, '005', 'Chanvorlak', 'Kim', 'chanvorlak@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '2022-03-01', 'Marketing', 'Phonom Penh', 'Phnom Penh', 'Cambodia', '08698445', 1, '2022-03-06 08:51:14'),
-(16, '006', 'Yuoyi', 'Vong', 'youyi@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-02', 'Finance', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '097847534', 1, '2022-03-06 09:14:57'),
-(17, '007', 'Longny', 'Chim', 'longny@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-01', 'Sales', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '09857475', 1, '2022-03-06 09:21:02');
+(13, '003', 'Ney', 'Sokung', 'sokung@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '2022-03-04', 'Operations', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '09684848', 1, '2022-03-06 08:47:44'),
+(14, '004', 'Moul', 'Nary', 'nary@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-02', 'Information Technology', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '0868674', 1, '2022-03-06 08:49:20'),
+(15, '005', 'Kim', 'Chanvorlak', 'chanvorlak@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Male', '2022-03-01', 'Marketing', 'Phonom Penh', 'Phnom Penh', 'Cambodia', '08698445', 1, '2022-03-06 08:51:14'),
+(16, '006', 'Vong', 'Yuoyi', 'youyi@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-02', 'Finance', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '097847534', 1, '2022-03-06 09:14:57'),
+(17, '007', 'Chim', 'Longny', 'longny@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Female', '2022-03-01', 'Sales', 'Phnom Penh', 'Phnom Penh', 'Cambodia', '09857475', 1, '2022-03-06 09:21:02');
 
 -- --------------------------------------------------------
 
