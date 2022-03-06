@@ -123,7 +123,7 @@
             </ul>
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto"> 
             <!-- Notifications Dropdown Menu -->
             <!-- Notification bell -->
             <?php include '../includes/admin-notification.php'?>
